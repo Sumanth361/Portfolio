@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: white;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+.ex{
+    display: inline-block;
+}
+.ex1{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.ex1 a:hover{
+    color: red;
+}
+li{
+    list-style: none;
+    padding-right: 50px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    margin-top: 20px;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-left: 45%;
+}
+#logo{
+    color: red;
+}
+
+.header-text{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.header-text p{
+    font-size: 20px;
+}
+.header-text h1{
+    font-size: 37px;
+}
+.header-text span{
+    color: red;
+}
+
+/*--------------------- About -------------------------*/
+
+.about{
+    padding: 80px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col-1{
+    flex-basis: 30%;
+}
+.col-1 img{
+    width: 65%;
+    border-radius: 11%;
+    margin-left: 14%;
+    height: 73%;
+    position: relative;
+    margin-top: 61px;
+}
+.col-2{
+    flex-basis: 60%;
+}
+.col-2 h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: red;
+}
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px 40px;
+    line-height: 30px;
+}
+.tab{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: red;
+}
+.tab::after{
+    content: '';
+    width: 100px;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab.active-link::after{
+    width: 100%;
+}
+.cpp-logo{
+    width: 70px;
+    height: 70px;
+}
+/* .tabs-contents,.tab-education{
+    display: none;
+} */
+
+.tabs-contents.active-tab{
+    display: block; 
+}
+
+/*---------------------------- My work ----------------------*/
+
+.work{
+    padding: 20px 0 10px;
+    margin-left: 5%;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.work1-img{
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+}
+.work2-img{
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+}
+.work-list{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+.work3-img{
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+}
+.link-logo{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+}
+.work1-desc{
+    font-size: 15px;
+}
+.layer{
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6),red);
+    border-radius: 15px;
+    left: 0px;
+    bottom: 0px;
+    /* overflow: hidden; */
+}
+
+/*------------------ contact me -------------------*/
+
+.contact-left{
+    padding: 20px 0 10px;
+    margin-left: 5%;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.row{
+    justify-content: start;
+    padding-top: 40px;
+}
+.similar{
+    color:red;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.btn{
+    background-color: red;
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.contact-right{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: rgb(20, 19, 19);
+    margin: 15px 0;
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copyright{
+    text-align: center;
+    padding-top: 30px;
+    background-color: rgb(20, 19, 19);
+    padding-bottom: 20px;
+}
+#msg{
+    color: red;
+   
+}
+.btn1{
+    background-color: red;
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.fa-solid{
+      display: none; 
+}
+.skills-mob{
+    display: none;
+}
+.tabs1{
+    display: none;
+}
+.work-mob{
+    display: none;
+}
+
+/*------------------------ css for small screen ---------------------------*/
+
+@media only screen and (max-width:600px) {
+    .fa-solid{
+        display: block;
+        font-size: 25px;
+        color: white;
+    }
+    .ex logo{
+        font-size: 25px;
+    }
+    .container .ex .logo{
+        font-size: 25px;
+        padding-left: 18%;
+    }
+    .container .ex1{
+        font-size: 11px;
+        margin-top: 12px;
+    }
+    .container .ex1 li{
+        padding-right: 11px;
+    }
+    .header-text h1{
+        font-size: 25px;
+        padding-top: 30px;
+    }
+    .about .container .row .col-2 h1{
+        position: absolute;
+        margin-top: -82px;
+        margin-left: -3px;
+        font-size: 26px;
+    }
+    .about .container .row .col-1 img{
+        position: relative;
+        margin-top: -41px;
+        margin-left: 132px;
+        height: 19%;
+    }
+    .about .container .row .col-2 p{
+        position: relative;
+        margin-left: -77px;
+        margin-top: 115px;
+        /* display: flex; */
+        /* display: none; */
+    }
+    .skills-mob{
+        display: block;
+    }
+    .tabs-contents.active-tab{
+        /* display: none;  */
+    }
+    .tabs{
+          display: none; 
+    }
+    .tabs1{
+        display: block;
+    }
+    #skillset{
+        margin-left: -95px;
+        margin-top: 42px;
+    }
+    .skills-mob{
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        color: red;
+        padding-bottom: 14px;
+    }
+    .cpp-logo{
+        width: 60px;
+        height: 75px;
+        margin-top: 15px;
+    }
+    .edu{
+        text-align: center;
+        margin-top: 33px;
+        padding-bottom: 16px;
+        font-size: 22px;
+        color: red;
+    }
+    #education{
+        margin-left: -83px;
+    }
+    .work{
+        display: none;
+        
+    }
+    .work-mob{
+        display: block;
+    }
+    .similar-mob{
+        margin-left: 112px;
+        color: red;
+        padding-bottom: 13px;
+    }
+    .work1-mob{
+        justify-content: center;
+        margin-left: 55px;
+    }
+    .work1-img{
+        width: 299px;
+        height: 251px;
+        border-radius: 15px;
+    }
+    .layer{
+        width: fit-content;
+    }
+    .work2-mob{
+        padding-top: 40px;
+        padding-left: 62px;
+    }
+    .work2-img{
+        width: 299px;
+        height: 251px;
+        border-radius: 15px;
+    }
+    .work2-mob{
+        padding-bottom: 40px;
+    }
+    .work3-img{
+        width: 299px;
+        height: 251px;
+        border-radius: 15px;
+        margin-left: 11px;
+    }
+    .work3-mob .layer{
+        width: 296px;
+        height: 40px;
+        margin-left: 14px;
+    }
+    .work3-mob{
+        margin-left: 57px;
+    }
+    .contact-right .form{
+        font-size: 12px;
+        padding: 8px;
+    }
+    .contact-left-head{
+        font-size: 20px;
+    }
+    .contact-left{
+        padding: 20px 0 10px;
+        margin-left: 2%;
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .contact-left a .btn{
+        background-color: red;
+        border: 1px solid white;
+        padding: 7px 8px;
+        border-radius: 10px;
+        color: white;
+        font-weight: 500;
+        font-size: 7px;
+        margin-top: 19px;
+    }
+    .contact-right{
+        margin-top: 25px;
+    }
+    .full-form{
+        padding: 12px;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+    .btn1{
+        background-color: red;
+        border-radius: 12px;
+    }
+
+}
